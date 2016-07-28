@@ -1,6 +1,6 @@
 # React Blog Backend
 
-The React Blog Backend is a REST api created with ruby on rails.  Its main purpose is to rehydrate the blog on load and provide a place to submit posts.  
+The React Blog Backend is a REST api created with [ruby on rails](http://rubyonrails.org/).  Its main purpose is to rehydrate the blog on load and provide a place to submit posts.  
 
 # Getting started
 
