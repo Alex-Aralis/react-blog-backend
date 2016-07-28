@@ -1,24 +1,48 @@
-# README
+# React Blog Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The React Blog Backend is a REST api created with ruby on rails.  Its main purpose is to rehydrate the blog on load and provide a place to submit posts.  
 
-Things you may want to cover:
+# Getting started
 
-* Ruby version
+Clone the repo
 
-* System dependencies
+```shell
+git clone <repo url>
+```
 
-* Configuration
+Setup a posgresql server on your system however you can... gl :)
 
-* Database creation
+`cd` into your freshly cloned repo and run 
 
-* Database initialization
+```shell
+bin/rails db:create db:migrate
+```
 
-* How to run the test suite
+to create the proper structure in your posgresql db.  You will know the posgresql installation when alright when the above command does not explode into a thousand errors. `._.`
 
-* Services (job queues, cache servers, search engines, etc.)
+to run the server on localhost:3000 do
 
-* Deployment instructions
+```shell
+bin/rails s
+```
 
-* ...
+It's all up and running... but how to use it?
+
+## How to Use it
+
+After following the *Getting Started* instructions got to localhost:3000/posts/new
+
+This should be a form.
+
+Enter some post information and submit.
+
+You will be redirected to localhost:3000/posts/1 or something.  nice.
+
+Your a smart person.  You get it.
+
+### Some things to try
+
+- Add some more posts
+- Go to localhost:3000/posts
+- Go to localhost:3000/posts.json
+- Imagine the possibility
