@@ -69,6 +69,8 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
+      binding.pry
+
       params.require(:post).permit(:title, :body, :favorited)
     end
 end
